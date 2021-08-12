@@ -21,6 +21,10 @@ public class Student extends Person{
 		return "Student";
 	}
 	
+	public int compareTo(Person p) {
+		return this._fullName.compareTo(p._fullName);
+	}
+	
 	
 	//End of Student class
 }
