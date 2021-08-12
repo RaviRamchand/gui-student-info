@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="application.MainController">
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
    <children>
       <Label layoutX="120.0" layoutY="43.0" text="Student Information">
          <font>
@@ -35,5 +34,15 @@
       <Button fx:id="_btnAdd" layoutX="93.0" layoutY="315.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="Add" />
       <Button fx:id="_btnSort" layoutX="173.0" layoutY="315.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="Sort" />
       <Button fx:id="_btnDis" layoutX="253.0" layoutY="315.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="Display" />
+      <Label fx:id="_lblSort" layoutX="153.0" layoutY="275.0" text="Database Sorted" textFill="#35903a">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="_lblErr" layoutX="165.0" layoutY="92.0" text="Invalid Input" textFill="#da0909">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
