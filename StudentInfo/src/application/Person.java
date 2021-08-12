@@ -1,16 +1,14 @@
 package application;
 
-public abstract class Person
-{
-	private String _fullName;
-	private String _address;
+//Implement Comparable interface here, because sorting by name -> field in Person class
+public abstract class Person implements Comparable<Person>{
+	protected String _fullName;
+	protected String _address;
 
 	
-  public Person(String newName, String newAddress)
-  {
+  public Person(String newName, String newAddress){
 	_fullName = newName;
-	_address = newAddress;
-	
+	_address = newAddress;	
   }
 
   @Override
@@ -19,5 +17,6 @@ public abstract class Person
   }
   public abstract String currentStatus();
 
+  public abstract int compareTo(Person p);
   
 }
