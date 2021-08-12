@@ -35,7 +35,7 @@ public class MainController{
 	double gpa;
 
 	//ArrayList of type Student to save student objects in 
-	ArrayList<Student> stArr = new ArrayList<Student>();
+	static ArrayList<Student> stArr = new ArrayList<Student>();
 
 	//Handlers
 	@FXML private void initialize() {
@@ -80,6 +80,9 @@ public class MainController{
 
 		System.out.println(stArr.toString());
 		
+		_txtName.clear();
+		_txtAdd.clear();
+		_txtGpa.clear();
 	}
 
 	//Sorts the users input based off first name
@@ -94,6 +97,8 @@ public class MainController{
 
 	private void disHandle() {
 		System.out.println("Display Button");
+		
+		//Access the second gui
 		Stage secondaryStage = new Stage();
 		try {
 			AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("Second.fxml"));
